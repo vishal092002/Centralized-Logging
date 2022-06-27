@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --link:#000;
+    --hover:#b00;
+    --main:#000;
+    --bg:#f0f0f0;
+    --size:99vmin;
+    --ratio: 1 / 1.1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    padding: 10px;
+    background: linear-gradient(135deg, #1f8537, #eeeeee);  
+}
+
+.logo{
+    width: 170px;
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border: 3px solid var(--main);
+    color: var(--main);
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    transition: all 0.2s;
+    margin-right: auto;
+}
+
+.logo:hover{
+    background: var(--main);
+    color: var(--bg);
+}
+
+li, a{
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px, 10px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #b00;
+}
+
+.container{
+    padding: auto;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.container .title{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
